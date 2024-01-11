@@ -5,7 +5,7 @@
   font-family: 'Mulish', sans-serif;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   background-color: white;
 
   .hero-image-section {
@@ -30,7 +30,9 @@
     @include login-half;
     padding: 0 120px 0 80px;
     height: 100vh;
-    
+    margin-bottom: 70px;
+    flex-direction: column;
+    justify-content: center;
 
     .form-header {
       h1 {
@@ -49,6 +51,7 @@
     .form-control {
       height: 40px;
       margin-top: 20px;
+      width: 100%;
 
       input {
         @include text-input;
