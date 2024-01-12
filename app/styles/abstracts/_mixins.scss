@@ -12,6 +12,17 @@
   width: 100%;
 }
 
+@mixin nav {
+  padding: 20px;
+  height: 70px;
+}
+
+@mixin nav-image {
+  display: inline-block;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
 @mixin media-md {
   @media screen and (max-width: 768px) {
     @content;

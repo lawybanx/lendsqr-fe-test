@@ -1,0 +1,126 @@
+@import '../abstracts/_variables';
+@import '../abstracts/_mixins';
+
+nav {
+  @include nav;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  padding: 0 50px 0 350px;
+  align-items: center;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  z-index: 90;
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search {
+      height: 40px;
+      display: flex;
+
+      .form-control {
+        height: 100%;
+        width: 250px;
+
+        input {
+          @include text-input;
+          border-radius: 8px 0 0 8px;
+        }
+      }
+      .search-btn {
+        border: none;
+        width: 70px;
+        border-radius: 0 8px 8px 0;
+        background-color: $primary-btn;
+        cursor: pointer;
+      }
+    }
+    .right-side {
+      display: flex;
+      align-items: center;
+    }
+
+    .Link {
+      margin-right: 50px;
+    }
+    .image {
+      @include nav-image;
+    }
+    .user-avatar {
+      @include nav-image;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    p:nth-last-child(2) {
+      margin-right: 5px;
+    }
+  }
+}
+
+@include media-md {
+  nav {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+
+    .navbar {
+      .search {
+        height: 30px;
+        margin-left: 10px;
+
+        .form-control {
+          width: 70%;
+
+          input {
+            color: #545f7d;
+
+            &::placeholder {
+              color: #545f7d;
+              opacity: 0.7;
+            }
+          }
+        }
+        .search-btn {
+          width: 30px;
+        }
+      }
+      .right-side {
+        .Link {
+          margin-right: 20px;
+        }
+
+        .image {
+          margin-right: 10px;
+        }
+
+        .user-avatar {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          margin-right: 0;
+        }
+
+        .user {
+          margin-left: 5px;
+
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
