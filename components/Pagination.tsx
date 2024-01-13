@@ -25,6 +25,7 @@ interface ButtonProps {
 const DropdownFilter = ({ className, setItemsPerPage }: DropdownProps) => {
   return (
     <div className={`dropdown-filter ${className}`}>
+      <p onClick={() => setItemsPerPage(10)}>10</p>
       <p onClick={() => setItemsPerPage(20)}>20</p>
       <p onClick={() => setItemsPerPage(50)}>50</p>
       <p onClick={() => setItemsPerPage(100)}>100</p>
@@ -39,7 +40,6 @@ const Button = ({ src }: ButtonProps) => {
         src={src}
         alt='icon'
         className='icon'
-        placeholder='blur'
         quality={100}
       />
     </button>
@@ -69,7 +69,6 @@ export default function Pagination<T extends object>({
               src={dropdown}
               alt='dropdown icon'
               className='icon'
-              placeholder='blur'
               quality={100}
             />
             <DropdownFilter

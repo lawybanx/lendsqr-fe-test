@@ -24,7 +24,6 @@ export default function Sidebar() {
               src={icon}
               alt={`${link} icon`}
               className='icon'
-              placeholder='blur'
               quality={100}
             />
             <p>{link}</p>
@@ -45,7 +44,6 @@ export default function Sidebar() {
             src={briefcase}
             alt='switch'
             className='icon'
-            placeholder='blur'
             quality={100}
           />
           <p>Switch Organizations</p>
@@ -53,7 +51,6 @@ export default function Sidebar() {
             src={dropdown}
             alt='dropdown'
             className='icon'
-            placeholder='blur'
             quality={100}
           />
         </div>
@@ -62,7 +59,6 @@ export default function Sidebar() {
             src={dashboard}
             alt={'icon'}
             className='icon'
-            placeholder='blur'
             quality={100}
           />
           <p>Dashboard</p>

@@ -27,7 +27,6 @@ export default function DropdownMenu({ id, toggleDropdown }: any) {
             src={view}
             alt='view icon'
             className='icon'
-            placeholder='blur'
             quality={100}
           />
           <p>View Details</p>
@@ -38,7 +37,6 @@ export default function DropdownMenu({ id, toggleDropdown }: any) {
           src={blacklist}
           alt='blacklist icon'
           className='icon'
-          placeholder='blur'
           quality={100}
         />
         <p>Blacklist User</p>
@@ -48,7 +46,6 @@ export default function DropdownMenu({ id, toggleDropdown }: any) {
           src={activate}
           alt='activate icon'
           className='icon'
-          placeholder='blur'
           quality={100}
         />
         <p>Activate User</p>

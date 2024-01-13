@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { filter } from './utils';
+import FilterModal from './FilterModal';
 
 export default function TableHeader() {
   const headers = [
@@ -19,13 +18,7 @@ export default function TableHeader() {
             <th key={index}>
               <div>
                 <p>{header}</p>
-                <Image
-                  src={filter}
-                  alt='filter icon'
-                  className='icon'
-                  placeholder='blur'
-                  quality={100}
-                />
+                <FilterModal isFirst={index === 0}/>
               </div>
             </th>
           ))}

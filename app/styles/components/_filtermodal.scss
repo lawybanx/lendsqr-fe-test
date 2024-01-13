@@ -1,0 +1,57 @@
+@import '../abstracts/_variables';
+@import '../abstracts/_mixins';
+
+.filter-modal-wrapper {
+  @include dashboard-card;
+  width: 270px;
+  height: 600px;
+  position: absolute;
+  top: 66%;
+  z-index: 99;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+
+  .form-group {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+
+    input,
+    select {
+      @include text-input;
+      padding: 10px;
+      font-size: 14px;
+      color: $light-text;
+      background-color: white;
+    }
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    button {
+      width: 98px;
+      height: 40px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    :first-child {
+      background-color: white;
+      border: 1px solid $title-text;
+    }
+    :last-child {
+      background-color: $primary-btn;
+      color: white;
+    }
+  }
+}

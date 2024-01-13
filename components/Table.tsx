@@ -14,7 +14,7 @@ interface User {
 
 export default function Table<T extends object>({ userData }: TableProps<T[]>) {
   const [currentItems, setCurrentItems] = useState<T[]>([]);
-  const [itemsPerPage, setItemsPerPage] = useState<number>(20);
+  const [itemsPerPage, setItemsPerPage] = useState<number>(10);
 
   const [pageCount, setPageCount] = useState<number>(0);
 
@@ -54,6 +54,7 @@ export default function Table<T extends object>({ userData }: TableProps<T[]>) {
                   }: User) => (
                     <TableItem
                       key={id}
+                      id={id}
                       orgName={orgName}
                       userName={userName}
                       email={email}

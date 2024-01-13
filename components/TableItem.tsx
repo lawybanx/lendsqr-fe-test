@@ -10,7 +10,7 @@ interface TableItemProps {
 }
 
 export default function TableItem({
-  key,
+  id,
   orgName,
   userName,
   email,
@@ -44,7 +44,7 @@ export default function TableItem({
 
   return (
     <>
-      <tr key={key} className='tr-body'>
+      <tr id={id} className='tr-body'>
         <td>{slicedOrganization}</td>
         <td>{slicedUserName}</td>
         <td>{slicedEmail}</td>
@@ -55,19 +55,16 @@ export default function TableItem({
             <p className='status'>Inactive</p>
 
             <div
-              onClick={() =>
-                setActiveId(prevId => (prevId === key ? '' : key))
-              }
+              onClick={() => setActiveId(prevId => (prevId === id ? '' : id))}
               className='icon'
             >
               <Image
                 src={ellipsis}
                 alt='ellipsis icon'
-                placeholder='blur'
                 quality={100}
               />
             </div>
-            <DropdownMenu id={key} toggleDropdown={{ activeId, setActiveId }} />
+            <DropdownMenu id={id} toggleDropdown={{ activeId, setActiveId }} />
           </div>
         </td>
       </tr>

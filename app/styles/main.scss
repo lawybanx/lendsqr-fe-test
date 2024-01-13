@@ -5,11 +5,6 @@
 // Base
 @import 'base/_reset';
 
-// Layout
-// @import 'layout/_header';
-// @import 'layout/_footer';
-// @import 'layout/_grid';
-
 // Components
 @import 'components/_navbar';
 @import 'components/_sidebar';
@@ -17,6 +12,7 @@
 @import 'components/_table';
 @import 'components/_pagination';
 @import 'components/_dropdownmodal';
+@import 'components/_filtermodal';
 
 // Pages
 @import 'pages/_login';
