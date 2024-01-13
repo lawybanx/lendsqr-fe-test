@@ -27,6 +27,9 @@ import filter from '@/app/assets/filter.png';
 import ellipsis from '@/app/assets/ellipsis.png';
 import leftbtn from '@/app/assets/leftbtn.png';
 import rightbtn from '@/app/assets/rightbtn.png';
+import view from '@/app/assets/view.png';
+import blacklist from '@/app/assets/blacklist.png';
+import activate from '@/app/assets/activate.png';
 
 const customers = [
   { link: 'users', icon: users },
@@ -72,4 +75,7 @@ export {
   ellipsis,
   leftbtn,
   rightbtn,
+  view,
+  blacklist,
+  activate
 };

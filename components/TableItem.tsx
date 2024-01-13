@@ -54,7 +54,12 @@ export default function TableItem({
           <div>
             <p className='status'>Inactive</p>
 
-            <div onClick={() => setActiveId(key)} className='icon'>
+            <div
+              onClick={() =>
+                setActiveId(prevId => (prevId === key ? '' : key))
+              }
+              className='icon'
+            >
               <Image
                 src={ellipsis}
                 alt='ellipsis icon'
