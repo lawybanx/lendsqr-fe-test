@@ -1,0 +1,52 @@
+@import '../abstracts/_variables';
+@import '../abstracts/_mixins';
+
+.users {
+  margin-top: 30px;
+}
+
+.dashboard-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: auto;
+  justify-content: space-between;
+  margin: 50px 0px;
+
+  .dashboard-card {
+    @include dashboard-card;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    height: 160px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $hover-bg;
+      transform: scale(1.05);
+    }
+
+    .card-icon {
+      padding: 20px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+
+
+      .icon {
+        object-fit: contain;
+      }
+    }
+
+    p {
+      text-transform: uppercase;
+      margin-top: 10px;
+      font-size: 14px;
+      &:last-child {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}

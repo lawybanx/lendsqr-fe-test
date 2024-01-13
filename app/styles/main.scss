@@ -13,8 +13,8 @@
 // Components
 @import 'components/_navbar';
 @import 'components/_sidebar';
-// @import 'components/_dropdown';
+@import 'components/_dashboardcard';
 
 // Pages
 @import 'pages/_login';
-// @import 'pages/_about';
+@import 'pages/_dashboard';

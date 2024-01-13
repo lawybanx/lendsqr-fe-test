@@ -1,7 +1,7 @@
 import logo from '@/app/assets/logo.png';
 import briefcase from '@/app/assets/briefcase.png';
 import dropdown from '@/app/assets/dropdown.png';
-import home from '@/app/assets/home.png';
+import dashboard from '@/app/assets/home.png';
 import users from '@/app/assets/users.png';
 import guarantors from '@/app/assets/guarantors.png';
 import loans from '@/app/assets/loans.png';
@@ -21,6 +21,10 @@ import reports from '@/app/assets/reports.png';
 import prefrences from '@/app/assets/prefrences.png';
 import pricing from '@/app/assets/pricing.png';
 import audit from '@/app/assets/audit.png';
+import usersIcon from '@/app/assets/users-icon.png';
+import activeUsers from '@/app/assets/active-users.png';
+import loanUsers from '@/app/assets/loan-users.png';
+import savingsUsers from '@/app/assets/savings-users.png';
 
 const customers = [
   { link: 'users', icon: users },
@@ -51,4 +55,15 @@ const settings = [
   { link: 'audit logs', icon: audit },
 ];
 
-export { briefcase, dropdown, home, customers, businesses, settings };
+export {
+  briefcase,
+  dropdown,
+  dashboard,
+  customers,
+  businesses,
+  settings,
+  usersIcon,
+  activeUsers,
+  loanUsers,
+  savingsUsers,
+};

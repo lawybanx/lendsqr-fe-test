@@ -23,7 +23,12 @@
   margin-right: 20px;
 }
 
-
+@mixin dashboard-card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  padding: 20px;
+}
 
 @mixin media-md {
   @media screen and (max-width: 768px) {

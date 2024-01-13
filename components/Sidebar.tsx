@@ -3,7 +3,7 @@ import Logo from '@/app/assets/logo.png';
 import {
   briefcase,
   dropdown,
-  home,
+  dashboard,
   customers,
   businesses,
   settings,
@@ -56,6 +56,16 @@ export default function Sidebar() {
             placeholder='blur'
             quality={100}
           />
+        </div>
+        <div className='link-group'>
+          <Image
+            src={dashboard}
+            alt={'icon'}
+            className='icon'
+            placeholder='blur'
+            quality={100}
+          />
+          <p>Dashboard</p>
         </div>
         <div className='links'>
           <p className='sidebar-titles'>Customers</p>

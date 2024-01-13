@@ -1,0 +1,22 @@
+@import '../abstracts/_mixins';
+
+.dashboard {
+  padding: 100px 20px 100px 350px;
+  width: 100%;
+  overflow: hidden;
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@include media-md {
+  .dashboard {
+    padding: 100px 20px;
+  }
+}
+@include media-lg {
+  .dashboard {
+    padding: 100px 20px;
+  }
+}
