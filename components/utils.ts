@@ -1,4 +1,3 @@
-import logo from '@/app/assets/logo.png';
 import briefcase from '@/app/assets/briefcase.png';
 import dropdown from '@/app/assets/dropdown.png';
 import dashboard from '@/app/assets/home.png';
@@ -7,7 +6,6 @@ import guarantors from '@/app/assets/guarantors.png';
 import loans from '@/app/assets/loans.png';
 import models from '@/app/assets/models.png';
 import savings from '@/app/assets/savings.png';
-import loanRequests from '@/app/assets/loanProducts.png';
 import whitelist from '@/app/assets/whitelist.png';
 import karma from '@/app/assets/karma.png';
 import loanProducts from '@/app/assets/loanProducts.png';
@@ -25,6 +23,10 @@ import usersIcon from '@/app/assets/users-icon.png';
 import activeUsers from '@/app/assets/active-users.png';
 import loanUsers from '@/app/assets/loan-users.png';
 import savingsUsers from '@/app/assets/savings-users.png';
+import filter from '@/app/assets/filter.png';
+import ellipsis from '@/app/assets/ellipsis.png';
+import leftbtn from '@/app/assets/leftbtn.png';
+import rightbtn from '@/app/assets/rightbtn.png';
 
 const customers = [
   { link: 'users', icon: users },
@@ -66,4 +68,8 @@ export {
   activeUsers,
   loanUsers,
   savingsUsers,
+  filter,
+  ellipsis,
+  leftbtn,
+  rightbtn,
 };
