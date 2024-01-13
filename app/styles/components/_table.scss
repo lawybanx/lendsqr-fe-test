@@ -1,0 +1,68 @@
+@import '../abstracts/_variables';
+@import '../abstracts/_mixins';
+
+.table-wrapper {
+  @include dashboard-card;
+}
+
+table {
+  width: 100%;
+  color: $title-text;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    padding: 10px 0;
+    white-space: nowrap;
+    div {
+      display: flex;
+      align-items: center;
+    }
+    .icon {
+      margin-left: 10px;
+      object-fit: contain;
+      display: block;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      td {
+        padding: 15px 0;
+        font-size: 14px;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+
+          & > p {
+            background-color: rgba(33, 63, 125, 0.1);
+            padding: 8px;
+            border-radius: 15px;
+          }
+
+          .icon {
+            display: block;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-md {
+  .table-wrapper {
+    overflow-y: scroll;
+    table {
+      width: 300%;
+    }
+  }
+}

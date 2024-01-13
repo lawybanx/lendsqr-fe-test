@@ -33,7 +33,6 @@
       align-items: center;
       border-radius: 50%;
 
-
       .icon {
         object-fit: contain;
       }
@@ -48,5 +47,13 @@
         font-weight: bold;
       }
     }
+  }
+}
+
+@include media-md {
+  .dashboard-card-container {
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
   }
 }
