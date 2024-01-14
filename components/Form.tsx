@@ -16,9 +16,9 @@ export default function Form() {
         <input type='password' placeholder='Password' />
       </div>
       <p className='forgot-password'>Forgot Password?</p>
-      <button type='submit'>
-        <Link href='/dashboard'>Log In</Link>
-      </button>
+      <Link href='/dashboard/users'>
+        <button>Log In</button>
+      </Link>
     </form>
   );
 }

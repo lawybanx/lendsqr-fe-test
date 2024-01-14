@@ -17,7 +17,7 @@ export default function TableHeader() {
           {headers.map((header, index) => (
             <th key={index}>
               <div>
-                <p>{header}</p>
+                <p>{header.toUpperCase()}</p>
                 <FilterModal isFirst={index === 0}/>
               </div>
             </th>

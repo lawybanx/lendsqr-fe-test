@@ -30,6 +30,7 @@ export default function FilterForm({
       <div className='form-group'>
         <label htmlFor='organization'>Organization</label>
         <input
+          name='organization'
           type='text'
           value={formData.organization}
           onChange={handleChange}
@@ -40,6 +41,7 @@ export default function FilterForm({
       <div className='form-group'>
         <label htmlFor='email'>Email</label>
         <input
+          name='email'
           type='email'
           value={formData.email}
           onChange={handleChange}
@@ -50,6 +52,7 @@ export default function FilterForm({
       <div className='form-group'>
         <label htmlFor='username'>Username</label>
         <input
+          name='username'
           type='text'
           value={formData.username}
           onChange={handleChange}
@@ -60,6 +63,7 @@ export default function FilterForm({
       <div className='form-group'>
         <label htmlFor='date'>Date</label>
         <input
+          name='date'
           type='text'
           value={formData.date}
           onChange={handleChange}
@@ -70,6 +74,7 @@ export default function FilterForm({
       <div className='form-group'>
         <label htmlFor='phoneNumber'>Phone Number</label>
         <input
+          name='phoneNumber'
           type='tel'
           value={formData.phoneNumber}
           onChange={handleChange}
@@ -79,10 +84,7 @@ export default function FilterForm({
 
       <div className='form-group'>
         <label htmlFor='status'>Status</label>
-        <select
-          value={formData.status}
-          onChange={handleChange}
-        >
+        <select value={formData.status} onChange={handleChange}>
           <option value='active'>Active</option>
           <option value='inactive'>Inactive</option>
           <option value='blacklisted'>Blacklisted</option>

@@ -3,11 +3,11 @@
 
 .filter-modal-wrapper {
   @include dashboard-card;
-  width: 270px;
+  width: 290px;
   height: 600px;
   position: absolute;
-  top: 66%;
-  z-index: 99;
+  top: 68%;
+  z-index: 89;
   border: 1px solid rgba(33, 63, 125, 0.06);
 
   .form-group {
