@@ -29,7 +29,7 @@ export default function UserDetails({ id, userDetail }: UserDetailsProps) {
         setUser(user);
       } else {
         users.push(userDetail);
-        // localStorage.setItem('users', JSON.stringify(users));
+        localStorage.setItem('users', JSON.stringify(users));
         setUser(userDetail);
       }
     } else {
@@ -105,7 +105,7 @@ export default function UserDetails({ id, userDetail }: UserDetailsProps) {
       <main className='details-wrapper'>
         <div className='title'>
           <h1>User Details</h1>
-          <div className='tittle-button'>
+          <div className='title-buttons'>
             <button>Blacklist User</button>
             <button>Activate User</button>
           </div>

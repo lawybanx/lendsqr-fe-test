@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
+import ToggleSideBar from '@/components/ToggleSideBar';
 
 export default function DashboardLayout({
   children,
@@ -8,8 +9,7 @@ export default function DashboardLayout({
 }) {
   return (
     <section>
-      <Navbar />
-      <Sidebar />
+      <ToggleSideBar />
       <div>{children}</div>
     </section>
   );

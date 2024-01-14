@@ -31,7 +31,7 @@ export default function DropdownMenu({ id, toggleDropdown }: any) {
           />
           <p>View Details</p>
         </li>
-      </Link>
+      </Link  >
       <li>
         <Image
           src={blacklist}
