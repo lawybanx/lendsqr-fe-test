@@ -7,6 +7,7 @@ import {
   customers,
   businesses,
   settings,
+  logOut,
 } from './utils';
 
 interface sidebar {
@@ -42,14 +43,14 @@ export default function Sidebar() {
         <div className='link-group'>
           <Image
             src={briefcase}
-            alt='switch'
+            alt='briefcase icon'
             className='icon'
             quality={100}
           />
           <p>Switch Organizations</p>
           <Image
             src={dropdown}
-            alt='dropdown'
+            alt='dropdown icon'
             className='icon'
             quality={100}
           />
@@ -57,7 +58,7 @@ export default function Sidebar() {
         <div className='link-group'>
           <Image
             src={dashboard}
-            alt={'icon'}
+            alt='home icon'
             className='icon'
             quality={100}
           />
@@ -73,6 +74,18 @@ export default function Sidebar() {
           <p className='sidebar-titles'>Settings</p>
           {sidebarLinks(settings)}
         </div>
+        <footer>
+          <div className='link-group'>
+            <Image
+              src={logOut}
+              alt='logout icon'
+              className='icon'
+              quality={100}
+            />
+            <p>Log Out</p>
+          </div>
+          <p>v1.2.0</p>
+        </footer>
       </div>
     </aside>
   );

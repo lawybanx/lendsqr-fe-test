@@ -33,6 +33,7 @@ import activate from '@/app/assets/activate.png';
 import backArrow from '@/app/assets/back-arrow.png';
 import fullStar from '@/app/assets/full-star.png';
 import emptyStar from '@/app/assets/empty-star.png';
+import logOut from '@/app/assets/log-out.png';
 
 const customers = [
   { link: 'users', icon: users },
@@ -84,4 +85,5 @@ export {
   backArrow,
   fullStar,
   emptyStar,
+  logOut,
 };

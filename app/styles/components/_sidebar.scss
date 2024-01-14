@@ -76,12 +76,25 @@
       padding: 10px 30px;
     }
 
-    .links .link-group:first-of-type {
-      background-color: $hover-bg;
-      border-left: 4px solid $primary-text;
-      opacity: 1;
-      p {
-        color: $secondary-text;
+    .links {
+      .link-group:first-of-type {
+        background-color: $hover-bg;
+        border-left: 4px solid $primary-text;
+        opacity: 1;
+        p {
+          color: $secondary-text;
+        }
+      }
+    }
+    footer {
+      border-top: 1px solid rgba(33, 63, 125, 0.1);
+      margin-top: 30px;
+      padding: 20px 0;
+
+      & > p:last-child {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 30px;
       }
     }
   }
