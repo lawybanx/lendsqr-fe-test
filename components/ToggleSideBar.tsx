@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
 export default function ToggleSideBar() {
-  const [toggleSidebar, setToggleSidebar] = useState<boolean>(false);
+  const [toggleSidebar, setToggleSidebar] = useState<boolean>(true);
 
   const handleToggleSidebar = () => {
     setToggleSidebar(prev => !prev);
