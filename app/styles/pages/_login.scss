@@ -60,6 +60,20 @@
         }
       }
     }
+    .form-control:nth-child(3) {
+      position: relative;
+    }
+
+    & span.show {
+      font-size: 12px;
+      font-weight: 600;
+      color: $primary-text;
+      text-transform: uppercase;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      cursor: pointer;
+    }
 
     .forgot-password {
       font-size: 12px;
