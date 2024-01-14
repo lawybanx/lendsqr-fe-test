@@ -6,7 +6,6 @@ export default function page() {
     <div className='dashboard'>
       <h1>Users</h1>
       <DashboardCard />
-      {/* @ts-expect-error Async Server Component */}
       <UsersTable />
     </div>
   );
