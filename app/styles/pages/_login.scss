@@ -46,6 +46,11 @@
         font-weight: 400;
         font-size: 1.3rem;
       }
+
+      .logo-section {
+        display: none;
+        padding-bottom: 40px;
+      }
     }
 
     .form-control {
@@ -113,6 +118,10 @@
 
       .form-header {
         text-align: center;
+
+        .logo-section {
+          display: block;
+        }
       }
     }
   }

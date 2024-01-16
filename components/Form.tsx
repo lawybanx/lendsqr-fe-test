@@ -1,7 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import Logo from '@/app/assets/logo.png';
 
 export default function Form() {
   const router = useRouter();
@@ -28,6 +30,15 @@ export default function Form() {
   return (
     <form onSubmit={handleSubmit} className='login-form-section'>
       <div className='form-header'>
+        <div className='logo-section'>
+          <Image
+            src={Logo}
+            alt='Lendsqr logo'
+            className='logo'
+            placeholder='blur'
+            quality={100}
+          />
+        </div>
         <h1>Welcome!</h1>
         <p>Enter details to login.</p>
       </div>
