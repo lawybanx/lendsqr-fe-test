@@ -55,3 +55,9 @@
     }
   }
 }
+
+@include media-md {
+  .filter-modal-wrapper {
+    top: 75%;
+  }
+}

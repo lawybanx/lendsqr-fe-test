@@ -1,6 +1,6 @@
 'use client';
 
-import FilterForm from '@/app/styles/components/FilterForm';
+import FilterForm from '@/components/FilterForm';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { filter } from './utils';

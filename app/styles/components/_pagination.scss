@@ -68,3 +68,9 @@
     }
   }
 }
+
+@include media-md {
+  .pagination-wrapper {
+    justify-content: center;
+  }
+}
